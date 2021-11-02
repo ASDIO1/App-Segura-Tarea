@@ -1,0 +1,7 @@
+#form-wrapper #post-form .create-submit {
+    border: 2px solid var(--createcolor);
+}
+
+#form-wrapper #post-form .create-submit:hover{
+    box-shadow: 2px 2px 5px 7px var(--createcolor);
+}

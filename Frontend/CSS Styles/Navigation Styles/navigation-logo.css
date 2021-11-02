@@ -1,0 +1,8 @@
+/*========== NAVIGATION lOGO ==========*/
+
+#navigation-container .nav-items-container .nav-logo{
+    width: 20%;
+    height: 60%;
+    text-align: center;
+    /*border: solid white;*/
+}

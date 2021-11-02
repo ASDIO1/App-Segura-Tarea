@@ -1,0 +1,12 @@
+#form-wrapper #post-form .property-wrapper .edit-input{
+    color: var(--editcolor2);
+}
+
+#form-wrapper #post-form .edit-submit{
+    height: 100%;
+    border: 2px solid var(--editcolor);
+}
+
+#form-wrapper #post-form .edit-submit:hover{
+    box-shadow: 2px 2px 5px 7px var(--editcolor);
+}

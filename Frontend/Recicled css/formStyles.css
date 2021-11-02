@@ -1,0 +1,194 @@
+:root 
+{
+    --bgcolor: #FFF9CE;/*FFF8DC;*/  /*con: "--nombrevariable" se declara una variable*/
+    --bordercolor: #FFF284; /* fcfce1 Se usaran estas variables en donde se necesite solo llamando a las variables*/
+    --unselected: #949494;
+    --deletecolor: #FF4848;
+    --deletecolor2: #FF8A8A;
+    --editcolor: #9669FE;
+    --editcolor2: #AD8BFE;
+    --createcolor: rgb(4, 206, 145);
+    --createcolor2: rgb(5, 233, 165);
+}
+
+* {
+    box-sizing: border-box;
+    /*margin: 0;
+    width: 0;*/
+    font-family: varta;
+}
+
+body {
+    background-color: var(--bgcolor);
+    background-image: linear-gradient(#AD8BFE, #D0BCFE, #FFCAF9);
+    height: 700px;
+    
+}
+
+#form-wrapper {
+    width: 60%;
+    height: 78%;/*80%;700px;*/
+    margin: auto;
+    margin-top: 4%;
+    /*border: 1px solid black;*/
+    border-radius: 2%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0%;
+    
+}
+
+#form-wrapper #form-image {
+    /*border: 1px solid black;*/
+    width: 100%;
+    border-radius: 2% 0 0 2%;
+    /*background-image: url(https://images.unsplash.com/photo-1598903910670-321f09e94b42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
+    */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#form-wrapper #post-form {
+    /*border: 1px solid white;*/
+    width: 100%;
+    border-radius: 0 2% 2% 0;
+    background: rgb(7, 7, 7);
+}
+
+#form-wrapper #post-form h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+    width: 70%;
+    margin: 5% auto;
+}
+
+
+#form-wrapper #post-form .property-wrapper{
+    width: 70%;
+    margin: 5% auto;
+    /*border: 1px solid white;*/
+    /*border: 1px solid black;*/
+}
+
+#form-wrapper #post-form .property-wrapper label{
+    display: block;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+
+    /*border: 1px solid black;*/
+}
+
+#form-wrapper #post-form .property-wrapper input{
+    display: block;
+    width: 100%;
+    margin-bottom: 8%;
+    /*text-align: center;*/
+    color: var(--editcolor2);
+    font-size: 1.05em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.226);
+    /*border: 1px solid black;*/
+}
+
+#form-wrapper #post-form .property-wrapper .create-input{
+    color: var(--createcolor2);
+}
+
+#form-wrapper #post-form .property-wrapper .edit-input{
+    color: var(--editcolor2);
+}
+
+/*Custom File Input*/
+#form-wrapper #post-form .property-wrapper .custom-file-input{
+    color: whitesmoke;
+}
+
+#form-wrapper #post-form .property-wrapper .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    padding: 2% 0% 3% 3%;
+    /*margin-left: 10%;*/
+    width: 20%;
+}
+
+#form-wrapper #post-form .property-wrapper .custom-file-input::before {
+    content: 'Select image file';
+    color: whitesmoke;
+    display: inline-block;
+    background: transparent;/*-webkit-linear-gradient(top, var(--createcolor), var(--createcolor2));*/
+    /*border: 1px solid var(--createcolor);*/
+    border-radius: 3px;
+    padding: 2% 2%;/*5px 8px;*/
+    outline: none;
+    white-space: nowrap;
+    /*-webkit-user-select: none;*/
+    cursor: pointer;
+    /*text-shadow: 1px 1px rgb(77, 77, 77);*/
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 0.3s;
+}
+
+/*Create Input Button only*/
+#form-wrapper #post-form .property-wrapper .create-input.custom-file-input::before {
+    border: 1px solid var(--createcolor);
+}
+
+#form-wrapper #post-form .property-wrapper .create-input.custom-file-input:hover::before {
+    background-color: var(--createcolor2);
+    color: black;
+}
+
+/*Edit Input Button only*/
+#form-wrapper #post-form .property-wrapper .edit-input.custom-file-input::before {
+    border: 1px solid var(--editcolor);
+}
+
+#form-wrapper #post-form .property-wrapper .edit-input.custom-file-input:hover::before {
+    background-color: var(--editcolor2);
+    color: black;
+}
+
+/*Create/Edit submit buttons styling*/
+#form-wrapper #post-form .submit-container {
+    height: 8%;
+    width: 70%;
+    margin: auto;
+}
+
+#form-wrapper #post-form button {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    /*transform: translate(-50%, -50%);*/
+    background-color: transparent;
+    border-radius: 10%;
+
+    color: #e5fddd;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+#form-wrapper #post-form .create-submit {
+    border: 2px solid var(--createcolor);
+}
+
+#form-wrapper #post-form .edit-submit{
+    border: 2px solid var(--editcolor);
+}
+
+#form-wrapper #post-form .edit-submit:hover{
+    box-shadow: 2px 2px 5px 7px var(--editcolor);
+}
+
+#form-wrapper #post-form .create-submit:hover{
+    box-shadow: 2px 2px 5px 7px var(--createcolor);
+}

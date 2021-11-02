@@ -1,0 +1,19 @@
+/*========== NAVIGATION MENU ==========*/
+#navigation-container .nav-items-container .nav-menu{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: solid white;*/
+}
+
+#navigation-container .nav-items-container .nav-menu h3{
+    margin: 0 2%;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+#navigation-container .nav-items-container .nav-menu h3:hover{
+    color: rgb(245, 245, 245);
+}

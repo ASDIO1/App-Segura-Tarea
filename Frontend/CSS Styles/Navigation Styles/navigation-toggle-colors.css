@@ -1,0 +1,36 @@
+body.sec{
+    transition: background 5s;
+}
+
+/* TOGGLE BUTTON STYLING*/
+#navigation-container .nav-items-container .nav-menu .toggle-colors{
+    /*background-color: #e9f5ff;*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:  0.5s;
+}
+
+#navigation-container .nav-items-container .nav-menu .toggle-colors:hover{
+    color: rgb(245, 245, 245);
+}
+
+/* TOGGLE ACTIONS */
+#navigation-container .nav-items-container .nav-menu .toggle-colors:before{
+    content: '\f186';
+    font-family: fontAwesome;
+}
+
+.sec.dark #navigation-container .toggle-colors:before{
+    content: '\f185';
+}
+
+.sec.dark{
+    background: linear-gradient(-45deg, var(--gradientDark1), var(--gradientDark2), var(--gradientDark3), var(--gradientDark4));
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}

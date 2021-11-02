@@ -1,0 +1,13 @@
+#form-wrapper #post-form .property-wrapper .create-input{
+    color: var(--createcolor2);
+}
+
+/*Create Input Button only*/
+#form-wrapper #post-form .property-wrapper .create-input.custom-file-input::before {
+    border: 1px solid var(--createcolor);
+}
+
+#form-wrapper #post-form .property-wrapper .create-input.custom-file-input:hover::before {
+    background-color: var(--createcolor2);
+    color: black;
+}

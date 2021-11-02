@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--SCRIPTS-->
+        <script src="./categories.js"></script>
+        <script src="../dark-light-bg.js"></script>
+        <script src="../menu-functions.js"></script>
+        <script src="../nav-refirects.js"></script>
+        <!--CSS-->
+        <link href="../indexStyles.css" rel="stylesheet">
+        <link href="../CSS Styles/index.css" rel="stylesheet">
+        <link href="../CSS Styles/gradient-background.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation-general.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation-logo.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation-menu.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation-login-register.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation.createbtn.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/navigation-toggle-colors.css" rel="stylesheet">
+        <link href="../CSS Styles/Navigation Styles/menu-functions.css" rel="stylesheet">
+        <!--<link href="./nav.css" rel="stylesheet">-->
+        <!--LIBRARIES-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body class="sec">
+        <!--<nav class="navigation">
+            <div class="filter-container">
+                <!xx--<div class="general-filter-wrapper">
+                    <label for="general-filter">General filter</label>
+                    <select name="cards-general-filter" id="general-filter" class="cards-filter">
+                        <option value="none">none</option>
+                        <option value="name_a-z">ordered by name a-z</option>
+                        <option value="name_z-a">ordered by name z-a</option>
+                        <option value="price_low-high">ordered by price low-high</option>
+                        <option value="price_high-low">ordered by price high-low</option>
+                    </select>
+                    <button type="button" id="general-filter-btn">apply</button>
+                </div>--xx>
+                <div class="specific-filter-wrapper">
+                    <label for="specific-filter">Specific filter</label>
+                    <select name="cards-specific-filter" id="specific-filter" class="cards-filter">
+                        <option value="none">none</option>
+                        <option value="name">name</option>
+                        <option value="description">description</option>
+                    </select>
+                    <input type="text" name="name_input_name" id="specific-filter-input" placeholder="contains">
+                    <button type="button" id="specific-filter-btn">apply</button>
+                </div>
+            </div>
+            
+            <div class="create-wrapper">
+                <div class="create-container">
+                    <button class="btn create-btn">create</button>
+                    <div class="fill-btn"> </div>
+                </div>
+            </div>
+        </nav>-->
+        <nav id="navigation-container">
+            <div class="nav-items-container">
+                <div class="nav-logo">
+                    <h1>NANA</h1>
+                </div>
+                <div class="nav-menu">
+                    <h3 id="go2combos">Combos</h3>
+
+                    <div class="toggle-colors">
+                    </div>
+                    
+                    <h3 class = "func-toggle">Functions</h3>
+                    <div class="menu-functions">
+                        <div class="specific-filter-wrapper">
+                            <label for="specific-filter">Specific filter</label>
+                            <select name="cards-specific-filter" id="specific-filter" class="cards-filter">
+                                <option value="none">none</option>
+                                <option value="name">name</option>
+                                <option value="description">description</option>
+                            </select>
+                            <input type="text" name="name_input_name" id="specific-filter-input" placeholder="contains">
+                            <button type="button" id="specific-filter-btn">apply</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="login-items btn-wrapper">
+                    <div class="button-container create-container">
+                        <button class="btn create-btn">create</button>
+                        <div class="fill-btn"> </div>
+                    </div>
+                    <div class="button-container login-container">
+                        <button class="btn login-btn">LogOut</button>
+                        <div class="fill-btn"> </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="cards-container"> <!--Inside the CARD will be inserted from de app.JS-->
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+#post-form .multiselect {
+    width: 200px;
+}
+
+
+#post-form .selectBox {
+    position: relative;
+    transition: 0.3s;
+}
+
+#post-form .selectBox select {
+    width: 100%;
+    font-weight: bold;
+    z-index: 200;
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid var(--createcolor2)
+}
+
+#post-form .selectBox:hover {
+    background: var(--createcolor)
+}
+
+#post-form .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#post-form #checkboxes {
+    display: none;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    border: 1px #dadada solid;
+
+    font-size: 0.65em;
+    font-weight: 100;
+    max-width: 50%;
+}
+
+#post-form #checkboxes label {
+    display: flex;
+    transition: background-color 0.2s;
+}
+
+#post-form #checkboxes label:hover {
+    background-color: var(--createcolor);
+}

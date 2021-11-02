@@ -1,0 +1,21 @@
+body {
+	width: 100%;
+	transition: background 5s;
+    background: linear-gradient(-45deg, var(--gradient1), var(--gradient2), var(--gradient3), var(--gradient4));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	
+    /*height: 700px;*/
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

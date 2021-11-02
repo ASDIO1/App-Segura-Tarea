@@ -1,0 +1,19 @@
+#form-wrapper #post-form .submit-container {
+    height: 8%;
+    width: 70%;
+    margin: auto;
+}
+
+#form-wrapper #post-form button {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    /*transform: translate(-50%, -50%);*/
+    background-color: transparent;
+    border-radius: 10%;
+
+    color: #e5fddd;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.6s;
+}

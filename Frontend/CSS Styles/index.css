@@ -1,0 +1,28 @@
+
+/*================= GENERAL STYLES AND GRADIENT BACKGROUND==================*/
+:root {
+    --gradient1: #957DAD;/*#D3959B;*//*#ee7752;*/
+    --gradient2: #D291BC;/*#fa8c97*//*#e73c7e;*/
+    --gradient3: #FEC8D8;/*#a8f19e;*//*#23a6d5;*/
+    --gradient4: #FFDFD2;/*#BFE6BA;*//*#23d5ab;*/
+    --gradientDark1: #1f0f27;/*#0f0c29;/*#aa5238;*/
+    --gradientDark2: #332043;/*#302b63;/*#a02b58;*/
+    --gradientDark3: #412c64;/*#413e64;/*#145e79;*/
+    --gradientDark4: #5e3b86;/*#24243e;/*#117961;*/
+    --mainWidth: 92%;
+
+    --navigationBackground: rgba(14, 0, 11, 0.185);
+    --navigationBackground2: rgba(14, 0, 11, 0.712);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: varta;
+}
+
+html, body{
+    height:100%;
+} 
+

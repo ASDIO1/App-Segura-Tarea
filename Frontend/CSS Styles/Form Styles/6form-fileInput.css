@@ -1,0 +1,40 @@
+/*Custom File Input*/
+#form-wrapper #post-form .property-wrapper .custom-file-input{
+    color: whitesmoke;
+}
+
+#form-wrapper #post-form .property-wrapper .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    padding: 2% 0% 3% 3%;
+    /*margin-left: 10%;*/
+    width: 20%;
+}
+
+#form-wrapper #post-form .property-wrapper .custom-file-input::before {
+    content: 'Select image file';
+    color: whitesmoke;
+    display: inline-block;
+    background: transparent;/*-webkit-linear-gradient(top, var(--createcolor), var(--createcolor2));*/
+    /*border: 1px solid var(--createcolor);*/
+    border-radius: 3px;
+    padding: 2% 2%;/*5px 8px;*/
+    outline: none;
+    white-space: nowrap;
+    /*-webkit-user-select: none;*/
+    cursor: pointer;
+    /*text-shadow: 1px 1px rgb(77, 77, 77);*/
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 0.3s;
+}
+
+
+/*Edit Input Button only*/
+#form-wrapper #post-form .property-wrapper .edit-input.custom-file-input::before {
+    border: 1px solid var(--editcolor);
+}
+
+#form-wrapper #post-form .property-wrapper .edit-input.custom-file-input:hover::before {
+    background-color: var(--editcolor2);
+    color: black;
+}

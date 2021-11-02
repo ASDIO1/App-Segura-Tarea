@@ -1,0 +1,8 @@
+#navigation-container .btn-wrapper .create-container .create-btn {
+    border: 2px solid var(--createcolor2);
+}
+#navigation-container .btn-wrapper .create-container:hover {
+    background-color: var(--createcolor2);
+    box-shadow: 2px 2px 5px 7px rgba(83, 219, 83, 0.2);
+}
+

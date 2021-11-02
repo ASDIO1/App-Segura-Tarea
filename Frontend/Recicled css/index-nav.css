@@ -1,0 +1,144 @@
+
+/*================= GENERAL STYLES AND GRADIENT BACKGROUND==================*/
+:root {
+    --gradient1: #957DAD;/*#D3959B;*//*#ee7752;*/
+    --gradient2: #D291BC;/*#fa8c97*//*#e73c7e;*/
+    --gradient3: #FEC8D8;/*#a8f19e;*//*#23a6d5;*/
+    --gradient4: #FFDFD2;/*#BFE6BA;*//*#23d5ab;*/
+    --gradientDark1: #aa5238;
+    --gradientDark2: #a02b58;
+    --gradientDark3: #145e79;
+    --gradientDark4: #117961;
+    --mainWidth: 92%;
+
+    --navigationBackground: rgba(14, 0, 11, 0.185);
+    --navigationBackground2: rgba(14, 0, 11, 0.712);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: varta;
+}
+
+html, body{
+    height:100%;
+} 
+
+/*=============================================== PAGE CONTAINER ===============================================*/
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 0, 19, 0.2);
+}
+
+/*=============================================== NAVIGATION ===============================================*/
+
+/*========== NAVIGATION GENERAL ==========*/
+#navigation-container {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    background-color: var(--navigationBackground);
+    color: rgba(245, 245, 245, 0.712);
+    transition: 0.5s;
+}
+
+#navigation-container:hover {
+    background-color: var(--navigationBackground2);
+}
+
+.nav-items-container {
+    width: var(--mainWidth);
+    height: 100%;
+    margin: auto;
+    /*border: solid white;*/
+}
+
+#navigation-container .nav-items-container {
+    display: flex;
+    align-items: center;
+}
+
+/*========== NAVIGATION lOGO ==========*/
+
+#navigation-container .nav-items-container .nav-logo{
+    width: 20%;
+    height: 60%;
+    text-align: center;
+    /*border: solid white;*/
+}
+
+/*========== NAVIGATION MENU ==========*/
+#navigation-container .nav-items-container .nav-menu{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: solid white;*/
+}
+
+#navigation-container .nav-items-container .nav-menu h3{
+    margin: 0 2%;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+#navigation-container .nav-items-container .nav-menu h3:hover{
+    color: rgb(245, 245, 245);
+}
+
+/*====== NAVIGATION LOGIN BTNs ======*/
+#navigation-container .btn-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 20%;
+    height: 70%;
+    
+    /*border: 1px solid black;*/
+}
+
+#navigation-container .btn-wrapper .button-container {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    border-radius: 10%;
+    transition: 0.6s;
+    /*border: 1px solid black;*/
+}
+
+#navigation-container .btn-wrapper .btn {
+    height: 100%;
+    width: 100%;
+    /*transform: translate(-50%, -50%);*/
+    background-color: transparent;
+    border-radius: 10%;
+    color: #e5fddd;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#navigation-container .btn-wrapper .button-container .login-btn {
+    border: 2px solid var(--gradient1);
+}
+#navigation-container .btn-wrapper .login-container:hover {
+    background-color: var(--gradient1);
+}
+
+#navigation-container .btn-wrapper .button-container .register-btn {
+    border: 2px solid var(--gradient2);
+}
+#navigation-container .btn-wrapper .register-container:hover {
+    background-color: var(--gradient2);
+}
+
+
+
+
+

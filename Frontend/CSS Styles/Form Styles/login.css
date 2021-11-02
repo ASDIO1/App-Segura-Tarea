@@ -1,0 +1,67 @@
+
+/* Reference: https://www.mockplus.com/blog/post/login-page-examples */
+:root 
+{
+    --logincolor: whitesmoke;
+}
+
+
+
+#form-wrapper {
+    width: 65%;
+    height: 83%;/*80%;700px;*/
+    margin: auto;
+    margin-top: 4%;
+    /*border: 1px solid black;*/
+    border-radius: 2%;
+}
+
+#form-wrapper #form-image {
+    /*border: 1px solid black;*/
+    width: 100%;
+    border-radius: 0% 2% 2% 0%;
+    /*background-image: url(https://images.unsplash.com/photo-1598903910670-321f09e94b42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#form-wrapper #post-form {
+    /*border: 1px solid white;*/
+    width: 100%;
+    border-radius: 2% 0% 0% 2%;
+    background: rgb(11, 1, 31);
+    
+    /*padding: 10%;*/
+}
+
+#form-wrapper #post-form h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1em;
+    width: 70%;
+    margin: 5% auto;
+}
+
+#form-wrapper #post-form .submit-container {
+    height: 8%;
+    width: 40%;
+    margin: auto;
+}
+
+#form-wrapper #post-form .property-wrapper #password_input{
+    color: var(--logincolor);
+}
+#form-wrapper #post-form .property-wrapper #username_input{
+    color: var(--logincolor);
+}
+
+/*Login Button*/
+#form-wrapper #post-form .create-submit {
+    border: 2px solid var(--logincolor);
+}
+
+#form-wrapper #post-form .create-submit:hover{
+    box-shadow: 2px 2px 5px 7px var(--logincolor);
+}

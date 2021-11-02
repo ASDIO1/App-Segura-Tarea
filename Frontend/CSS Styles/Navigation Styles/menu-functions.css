@@ -1,0 +1,22 @@
+#navigation-container .menu-functions .specific-filter-wrapper{
+    display: none;
+}
+
+#navigation-container .menu-functions .specific-filter-wrapper:before{
+    display: none;
+}
+
+#navigation-container .menu-functions.func-on .specific-filter-wrapper{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+#navigation-container .menu-functions{
+    transition: 10s;
+}
